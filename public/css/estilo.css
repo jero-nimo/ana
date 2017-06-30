@@ -1,0 +1,87 @@
+#flipbook
+{
+	background-image: url("../img/FraseAnaG.png");
+	background-size: 50% auto;
+	background-repeat: no-repeat;
+}
+
+#bloque
+{
+	width: 1050px;
+	height: 650px;
+	margin: 0 auto;
+}
+
+audio
+{
+	width: 100%;
+}
+
+.hard
+{
+	background-size: 100% 100%;
+}
+
+#Tapa
+{
+	background-image: url("../img/Caratula.jpg");
+}
+
+#Tapa2
+{
+	background-image: url("../img/Caratula2.jpg");
+}
+
+#ContraPortada
+{
+	background-color: #ffffcc;	
+}
+
+#ContraPortada video
+{
+	height: auto;
+	width: 100%;
+	vertical-align: middle;
+	padding-top: 30%;
+}
+
+#ContraPortada2
+{
+	background-image: url("../img/Trasera2.png");
+}
+
+.page
+{
+	background-color: #ffffcc;
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	height: auto;
+}
+
+.page p.paginaTitulo
+{
+	position: absolute;
+	padding-right: 20px;
+	padding-left: 20px;
+	text-align: center;
+	vertical-align: text-top;
+	color: #7FFF00;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 40px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+
+.page img
+{
+	position: relative;
+	border-radius: 20px;
+	border: black 10px solid;
+	padding: auto;
+	margin: auto;
+	width: auto;
+	height: auto;
+	max-width: 90%; 
+	max-height: 80%;
+}

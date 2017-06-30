@@ -1,0 +1,344 @@
+<!-- Albun de Ana I 
+Creado por Jeronimo Fernandez
+Utilizando jquery.js y turn.js -->
+
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+		<title>Cumpleaños de Ana</title>
+
+		<link rel="shortcut icon" href="public/img/torta.ico">
+		<link rel="stylesheet" type="text/css" href="public/css/estilo.css">
+
+		<script type="text/javascript" src="public/js/jquery.js"></script>
+		<script type="text/javascript" src="public/js/turn.js"></script>
+		
+		<script type="text/javascript">
+			alert("FELIZ CUMPLEAÑOS ANA!!!, esperamos que disfrutes este pequeño detalle\n PD: Ten paciencia, tarda un poco en cargar todas las fotos...");
+	   		$(document).ready(function()
+	   			{
+	   				$("#flipbook").turn({
+						width: 1000,
+						height: 600,
+						autoCenter: true,
+						acceleration: true
+					});
+	   			});
+	   		var currentPage = 1;
+	   		//Para pasar con las teclas
+	   		document.addEventListener("keydown", presionoTecla);
+   			//Para cuando le da vuelta a la pagina
+	   		$("#flipbook").bind("turning", function(event, page, view) 
+	   			{
+				  currentPage = page;
+				});
+
+	   		function presionoTecla(e)
+	   		{
+	   			if (e.keyCode == 37)
+	   			{
+	   				PaginaAnterior();
+	   			}
+	   			else if (e.keyCode == 39)
+	   			{
+	   				SiguientePagina();
+	   			}
+	   		}
+
+	   		function SiguientePagina()
+	   		{
+	   			$("#flipbook").turn("next");
+	   		}
+
+	   		function PaginaAnterior()
+	   		{
+	   			$("#flipbook").turn("previous");
+	   		}
+		</script>
+		<script>
+		//	document.write(unescape("%3Cscript%20type%3D%22text/javascript%22%3E%0A%09%09%09do%0A%09%09%09%7B%0A%09%09%09%09password%3Dprompt%20%28%22Pon%20la%20clave%20correcta%20y%20pulsa%20aceptar.%22%2C%22Coloca%20la%20clave%22%29%3B%0A%09%09%09%7Dwhile%20%28password%20%21%3D%2210/06/1993%22%29%3B%0A%0A%09%09%09alert%28%22c%F3digo%20correcto.%5Cn%5C%27Ya%20puedes%20navegar%5C%27%22%29%3B%0A%09%09%3C/script%3E"));
+		</script>
+
+	</head>
+	<body>
+		<audio src="public/audio/Musica.mp3" controls autoplay loop></audio>
+		<div id="bloque">
+			<div id="flipbook">
+				<div class="hard" id="Tapa"></div>
+				<div class="hard" id="Tapa2"></div>
+				<div class="page">
+					<img src="public/img/1.jpg"></img>
+					<p class="paginaTitulo">Hoy es mi cumpleaños...</p>
+				</div>
+				<div class="page"> 
+					<img src="public/img/2.jpg"></img>
+					<p class="paginaTitulo">Dios los bendigaaa</p>
+				</div>
+				<div class="page">
+					<img src="public/img/3.jpg"></img>
+					<p class="paginaTitulo">Epa pAna</p>
+				</div>
+				<div class="page">
+					<img src="public/img/3,1.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/3,2.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/3,3.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/3,5.jpg"></img>
+					<p class="paginaTitulo">Desde este dia nunca solte a mi primo Juan...</p>
+				</div>
+				<div class="page">
+					<img src="public/img/4.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/5.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/6.jpg"></img>
+					<p class="paginaTitulo" style="font-size: 30px;">Look at your face, you hate your little sister since day 1</p>
+				</div>
+				<div class="page">
+					<img src="public/img/7.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/7,5.JPG"></img>
+					<p class="paginaTitulo" style="font-size: 30px;">Con mi primo y mi hermano, el pupú mas pupú de los tres</p>
+				</div>
+				<div class="page">
+					<img src="public/img/8.jpg"></img>
+					<p class="paginaTitulo">Mis abuelitos maternos</p>
+				</div>
+				<div class="page">
+					<img src="public/img/9.png"></img>
+					<p class="paginaTitulo">Y no pueden faltar los guaros!!</p>
+				</div>
+				<div class="page">
+					<img src="public/img/9,1.JPG"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/9,2.JPG"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/9,3.JPG"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/9,4.JPG"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/9,5.JPG"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/9,6.JPG"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/9,7.JPG"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/9,8.JPG"></img>
+					<p class="paginaTitulo">Cuando abres la camara frontal</p>
+				</div>
+				<div class="page">
+					<img src="public/img/9,9.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/9,10.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/9,11.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/9,12.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/9,13.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/10.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/11.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/11,1.JPG"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/11,2.JPG"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/11,3.JPG"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/11,4.JPG"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/11,5.JPG"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/11,6.JPG"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/11,7.JPG"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/11,8.JPG"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/11,9.JPG"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/11,10.JPG"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/11,12.JPG"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/11,13.JPG"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/11,14.JPG"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/12.jpg"></img>
+					<p class="paginaTitulo">Misión imposible</p>
+				</div>
+				<div class="page">
+					<img src="public/img/13.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/14.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/15.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/16.jpg"></img>
+					<p class="paginaTitulo">Probando alguito</p>
+				</div>
+				<div class="page">
+					<img src="public/img/17.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/18.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/19.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/20.jpg"></img>
+					<p class="paginaTitulo">Con mi pana Angelo</p>
+				</div>
+				<div class="page">
+					<img src="public/img/21.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/22.jpg"></img>
+					<p class="paginaTitulo">España Diciembre 2017</p>
+				</div>
+				<div class="page">
+					<img src="public/img/23.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/24.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/25.jpg"></img>
+					<p class="paginaTitulo">Tratando de que me de amor</p>
+				</div>
+				<div class="page">
+					<img src="public/img/26.jpg"></img>
+					<p class="paginaTitulo">Juan comiendo mucho como siempre</p>
+				</div>
+				<div class="page">
+					<img src="public/img/27.jpg"></img>
+					<p class="paginaTitulo">Feliz navidad!!</p>
+				</div>
+				<div class="page">
+					<img src="public/img/27,9.jpg"></img>
+					<p class="paginaTitulo">AREPASO!!</p>
+				</div>
+				<div class="page">
+					<img src="public/img/28.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/29.jpg"></img>
+					<p class="paginaTitulo">Le cayeron como moscas a la mierda</p>
+				</div>
+				<div class="page">
+					<img src="public/img/30.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/31.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/32.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/33.jpg"></img>
+					<p class="paginaTitulo"></p>
+				</div>
+				<div class="page">
+					<img src="public/img/34.jpg"></img>
+					<p class="paginaTitulo">Bella mi vida bella mi familia y amigos</p>
+				</div>
+				<div class="hard" id="ContraPortada">
+					<video controls poster="public/img/11,12.jpg">
+						<source src="public/Mi_pelicula.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+				<div class="hard" id="ContraPortada2"></div>
+			</div>
+		</div>
+	</body>
+</html>
